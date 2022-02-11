@@ -1,0 +1,42 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= city %> Covid19 Stats</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <% function getDate(minus){ %>
+      <% var date = new Date(); %>
+      <% date.setDate(date.getDate() - minus); %>
+      <% var dd = String(date.getDate()).padStart(2, '0'); %>
+      <% var mm = String(date.getMonth() + 1).padStart(2, '0'); %>
+      <% var yyyy = date.getFullYear(); %>
+      <% date = dd + '-' + mm + '-' + yyyy; %>
+      <% return date; %>
+    <% } %>
+
+    <table class="table table-striped ">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Total Cases</th>
+      <th scope="col">Active Cases</th>
+      <th scope="col">Active Cases Change</th>
+      <th scope="col">Total Deaths</th>
+    </tr>
+    </thead>
+    <tbody>
+      <% for (var i = 365; i > 0; i--){ %>
+        <tr>
+        <th scope="row"><%= getDate(366-i) %></th>
+        <td><%= data.active[i].cumulative_cases %></td>
+        <td><%= data.active[i].active_cases %></td>
+        <td><%= data.active[i].active_cases_change %></td>
+        <td><%= data.active[i].cumulative_deaths %></td>
+        <tr>
+      <% } %>
+    </tbody>
+    </table>
+
+  </body>

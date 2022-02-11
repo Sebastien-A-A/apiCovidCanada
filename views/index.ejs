@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Canada Covid19 Stats</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <table class="table table-striped ">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">State</th>
+      <th scope="col">New Cases</th>
+      <th scope="col">Total Cases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <form action="/alberta" method="POST">
+        <th scope="row">1</th>
+        <td><button class="btn btn-outline-dark" type="submit">Alberta</button></td>
+        <td><%= albertaNew %></td>
+        <td><%= albertaTotal %></td>
+      </form>
+    </tr>
+    <tr>
+      <form action="/britishcolombia" method="POST">
+      <th scope="row">2</th>
+      <td><button class="btn btn-outline-dark" type="submit">British Colombia</button></td>
+      <td><%= britishNew %></td>
+      <td><%= britishTotal %></td>
+    </form>
+    </tr>
+    <tr>
+      <form action="/manitoba" method="POST">
+      <th scope="row">3</th>
+      <td><button class="btn btn-outline-dark" type="submit">Manitoba</button></td>
+      <td><%= manitobaNew %></td>
+      <td><%= manitobaTotal %></td>
+    </form>
+    </tr>
+    <tr>
+      <form action="/newbrunswick" method="POST">
+      <th scope="row">4</th>
+      <td><button class="btn btn-outline-dark" type="submit">New Brunswick</button></td>
+      <td><%= brunswickNew %></td>
+      <td><%= brunswickTotal %></td>
+    </form>
+    </tr>
+    <tr>
+      <form action="/newfoundlandandlabrador" method="POST">
+      <th scope="row">5</th>
+      <td><button class="btn btn-outline-dark" type="submit">New Foundland And Labrador</button></td>
+      <td><%= newfoundlandNew %></td>
+      <td><%= newfoundlandTotal %></td>
+    </form>
+    </tr>
+    <tr>
+      <form action="/northwestterritories" method="POST">
+      <th scope="row">6</th>
+      <td><button class="btn btn-outline-dark" type="submit">Northwest Territories</button></td>
+      <td><%= northwestNew %></td>
+      <td><%= northwestTotal %></td>
+      </form>
+    </tr>
+    <tr>
+      <form action="/novascotia" method="POST">
+      <th scope="row">7</th>
+      <td><button class="btn btn-outline-dark" type="submit">Nova Scotia</button></td>
+      <td><%= novaNew %></td>
+      <td><%= novaTotal %></td>
+      </form>
+    </tr>
+    <tr>
+      <form action="/nunavut" method="POST">
+      <th scope="row">8</th>
+      <td><button class="btn btn-outline-dark" type="submit">Nunavut</button></td>
+      <td><%= nunavutNew %></td>
+      <td><%= nunavutTotal %></td>
+      </form>
+    </tr>
+    <tr>
+      <form action="/ontario" method="POST">
+      <th scope="row">9</th>
+      <td><button class="btn btn-outline-dark" type="submit">Ontario</button></td>
+      <td><%= ontarioNew %></td>
+      <td><%= ontarioTotal %></td>
+      </form>
+    </tr>
+    <tr>
+      <form action="/princeedwardisland" method="POST">
+      <th scope="row">10</th>
+      <td><button class="btn btn-outline-dark" type="submit">Prince Edward Island</button></td>
+      <td><%= princeNew %></td>
+      <td><%= princeTotal %></td>
+      </form>
+    </tr>
+    <tr>
+      <form action="/quebec" method="POST">
+      <th scope="row">11</th>
+      <td><button class="btn btn-outline-dark" type="submit">Quebec</button></td>
+      <td><%= qcNew %></td>
+      <td><%= qcTotal %></td>
+      </form>
+    </tr>
+    <tr>
+      <form action="/saskatchewan" method="POST">
+      <th scope="row">12</th>
+      <td><button class="btn btn-outline-dark" type="submit">Saskatchewan</button></td>
+      <td><%= saskatchewanNew %></td>
+      <td><%= saskatchewanTotal %></td>
+      </form>
+    </tr>
+    <tr>
+      <form action="/yukon" method="POST">
+      <th scope="row">13</th>
+      <td><button class="btn btn-outline-dark" type="submit">Yukon</button></td>
+      <td><%= yukonNew %></td>
+      <td><%= yukonTotal %></td>
+      </form>
+    </tr>
+    <tr>
+      <form action="/canada" method="POST">
+      <th scope="row">Total</th>
+      <td><button class="btn btn-outline-dark" type="submit">Canada</button></td>
+      <% const totalNewCases = albertaNew + britishNew + manitobaNew + brunswickNew + newfoundlandNew + northwestNew + novaNew + nunavutNew + ontarioNew + princeNew + qcNew + saskatchewanNew + yukonNew %>
+      <% const totalCases = albertaTotal + britishTotal + manitobaTotal + brunswickTotal + newfoundlandTotal + northwestTotal + novaTotal + nunavutTotal + ontarioTotal + princeTotal + qcTotal + saskatchewanTotal + yukonTotal %>
+      <td><%= totalNewCases %></td>
+      <td><%= totalCases %></td>
+      </form>
+    </tr>
+  </tbody>
+</table>
+
+  </body>
+</html>
