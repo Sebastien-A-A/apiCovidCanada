@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Canada Covid19 Stats</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <table class="table table-striped ">
@@ -21,104 +20,104 @@
       <form action="/alberta" method="POST">
         <th scope="row">1</th>
         <td><button class="btn btn-outline-dark" type="submit">Alberta</button></td>
-        <td><%= albertaNew %></td>
-        <td><%= albertaTotal %></td>
+        <td><%= albertaNew.toLocaleString() %></td>
+        <td><%= albertaTotal.toLocaleString() %></td>
       </form>
     </tr>
     <tr>
       <form action="/britishcolombia" method="POST">
       <th scope="row">2</th>
       <td><button class="btn btn-outline-dark" type="submit">British Colombia</button></td>
-      <td><%= britishNew %></td>
-      <td><%= britishTotal %></td>
+      <td><%= britishNew.toLocaleString() %></td>
+      <td><%= britishTotal.toLocaleString() %></td>
     </form>
     </tr>
     <tr>
       <form action="/manitoba" method="POST">
       <th scope="row">3</th>
       <td><button class="btn btn-outline-dark" type="submit">Manitoba</button></td>
-      <td><%= manitobaNew %></td>
-      <td><%= manitobaTotal %></td>
+      <td><%= manitobaNew.toLocaleString() %></td>
+      <td><%= manitobaTotal.toLocaleString() %></td>
     </form>
     </tr>
     <tr>
       <form action="/newbrunswick" method="POST">
       <th scope="row">4</th>
       <td><button class="btn btn-outline-dark" type="submit">New Brunswick</button></td>
-      <td><%= brunswickNew %></td>
-      <td><%= brunswickTotal %></td>
+      <td><%= brunswickNew.toLocaleString() %></td>
+      <td><%= brunswickTotal.toLocaleString() %></td>
     </form>
     </tr>
     <tr>
       <form action="/newfoundlandandlabrador" method="POST">
       <th scope="row">5</th>
       <td><button class="btn btn-outline-dark" type="submit">New Foundland And Labrador</button></td>
-      <td><%= newfoundlandNew %></td>
-      <td><%= newfoundlandTotal %></td>
+      <td><%= newfoundlandNew.toLocaleString() %></td>
+      <td><%= newfoundlandTotal.toLocaleString() %></td>
     </form>
     </tr>
     <tr>
       <form action="/northwestterritories" method="POST">
       <th scope="row">6</th>
       <td><button class="btn btn-outline-dark" type="submit">Northwest Territories</button></td>
-      <td><%= northwestNew %></td>
-      <td><%= northwestTotal %></td>
+      <td><%= northwestNew.toLocaleString() %></td>
+      <td><%= northwestTotal.toLocaleString() %></td>
       </form>
     </tr>
     <tr>
       <form action="/novascotia" method="POST">
       <th scope="row">7</th>
       <td><button class="btn btn-outline-dark" type="submit">Nova Scotia</button></td>
-      <td><%= novaNew %></td>
-      <td><%= novaTotal %></td>
+      <td><%= novaNew.toLocaleString() %></td>
+      <td><%= novaTotal.toLocaleString() %></td>
       </form>
     </tr>
     <tr>
       <form action="/nunavut" method="POST">
       <th scope="row">8</th>
       <td><button class="btn btn-outline-dark" type="submit">Nunavut</button></td>
-      <td><%= nunavutNew %></td>
-      <td><%= nunavutTotal %></td>
+      <td><%= nunavutNew.toLocaleString() %></td>
+      <td><%= nunavutTotal.toLocaleString() %></td>
       </form>
     </tr>
     <tr>
       <form action="/ontario" method="POST">
       <th scope="row">9</th>
       <td><button class="btn btn-outline-dark" type="submit">Ontario</button></td>
-      <td><%= ontarioNew %></td>
-      <td><%= ontarioTotal %></td>
+      <td><%= ontarioNew.toLocaleString() %></td>
+      <td><%= ontarioTotal.toLocaleString() %></td>
       </form>
     </tr>
     <tr>
       <form action="/princeedwardisland" method="POST">
       <th scope="row">10</th>
       <td><button class="btn btn-outline-dark" type="submit">Prince Edward Island</button></td>
-      <td><%= princeNew %></td>
-      <td><%= princeTotal %></td>
+      <td><%= princeNew.toLocaleString() %></td>
+      <td><%= princeTotal.toLocaleString() %></td>
       </form>
     </tr>
     <tr>
       <form action="/quebec" method="POST">
       <th scope="row">11</th>
       <td><button class="btn btn-outline-dark" type="submit">Quebec</button></td>
-      <td><%= qcNew %></td>
-      <td><%= qcTotal %></td>
+      <td><%= qcNew.toLocaleString() %></td>
+      <td><%= qcTotal.toLocaleString() %></td>
       </form>
     </tr>
     <tr>
       <form action="/saskatchewan" method="POST">
       <th scope="row">12</th>
       <td><button class="btn btn-outline-dark" type="submit">Saskatchewan</button></td>
-      <td><%= saskatchewanNew %></td>
-      <td><%= saskatchewanTotal %></td>
+      <td><%= saskatchewanNew.toLocaleString() %></td>
+      <td><%= saskatchewanTotal.toLocaleString() %></td>
       </form>
     </tr>
     <tr>
       <form action="/yukon" method="POST">
       <th scope="row">13</th>
       <td><button class="btn btn-outline-dark" type="submit">Yukon</button></td>
-      <td><%= yukonNew %></td>
-      <td><%= yukonTotal %></td>
+      <td><%= yukonNew.toLocaleString() %></td>
+      <td><%= yukonTotal.toLocaleString() %></td>
       </form>
     </tr>
     <tr>
@@ -127,8 +126,8 @@
       <td><button class="btn btn-outline-dark" type="submit">Canada</button></td>
       <% const totalNewCases = albertaNew + britishNew + manitobaNew + brunswickNew + newfoundlandNew + northwestNew + novaNew + nunavutNew + ontarioNew + princeNew + qcNew + saskatchewanNew + yukonNew %>
       <% const totalCases = albertaTotal + britishTotal + manitobaTotal + brunswickTotal + newfoundlandTotal + northwestTotal + novaTotal + nunavutTotal + ontarioTotal + princeTotal + qcTotal + saskatchewanTotal + yukonTotal %>
-      <td><%= totalNewCases %></td>
-      <td><%= totalCases %></td>
+      <td><%= totalNewCases.toLocaleString() %></td>
+      <td><%= totalCases.toLocaleString() %></td>
       </form>
     </tr>
   </tbody>
