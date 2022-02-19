@@ -2,6 +2,7 @@ const bodyParser = require("body-parser");
 const express = require("express");
 const https = require("https");
 const ejs = require("ejs");
+const request = require("request");
 
 const app = express();
 
@@ -204,6 +205,55 @@ app.post("/canada", function(req, res){
 
   website(res, citySelected, newUrl);
 });
+
+app.post("/", function(req, res){
+  const firstName = req.body.fName;
+  const email = req.body.email;
+  console.log(firstName, email);
+
+  const mailData= {
+    members: [
+      {
+        email_address: email,
+        status: "subscribed",
+        merge_fields: {
+          FNAME: firstName
+        }
+      }
+    ]
+  };
+  const jsonData = JSON.stringify(mailData);
+
+  const url = "https://us14.api.mailchimp.com/3.0/lists/3118e076b4";
+
+  const options = {
+    method: "POST",
+    auth: "sebastien:64ce1d3695d5b40a2be24b52406a5cac-us14"
+  }
+
+  const request = https.request(url, options, function(response){
+    if(response.statusCode === 200){
+      res.render("success");
+    } else {
+      res.render("failure");
+    }
+    response.on("data", function(data){
+      console.log(JSON.parse(data));
+    })
+  })
+
+  request.write(jsonData);
+  request.end();
+
+});
+
+app.post("/success", function(req, res){
+  res.redirect("/");
+})
+
+app.post("/failure", function(req, res){
+  res.redirect("/");
+})
 
 ////////////////////////////////////////////////////////////////////////////////
 
