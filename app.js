@@ -228,7 +228,7 @@ app.post("/", function(req, res){
 
   const options = {
     method: "POST",
-    auth: "sebastien:61ae9c6a53dfc07f5461b5f5f90c21e5-us14"
+    auth: "sebastien:" + key
   }
 
   const request = https.request(url, options, function(response){
