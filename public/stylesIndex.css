@@ -4,3 +4,29 @@
     zoom:200%;
   }
 }
+
+.box{
+  width: 20%;
+  margin: 0 40%;
+}
+
+.name-box{
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.email-box{
+  margin-bottom: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.big-box{
+  margin: 2% 0 5% 0;
+}
+
+.button{
+  width: 20%;
+  margin: 1% 40% 0 40%;
+}
