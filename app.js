@@ -249,11 +249,11 @@ app.post("/", function(req, res){
 
 app.post("/success", function(req, res){
   res.redirect("/");
-})
+});
 
 app.post("/failure", function(req, res){
   res.redirect("/");
-})
+});
 
 ////////////////////////////////////////////////////////////////////////////////
 
