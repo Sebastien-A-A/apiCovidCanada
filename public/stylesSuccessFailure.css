@@ -1,0 +1,23 @@
+h1{
+  font-style: sans-serif;
+  font-size: 3rem;
+}
+
+p{
+  line-height: 2.5;
+  font-size: 1.2rem;
+}
+
+.block-success{
+  background-color: rgb(231, 242, 254);
+  padding: 4.5% 5%;
+}
+
+.block-failure{
+  background-color: #e1e1e1;
+  padding: 4.5% 5%;
+}
+
+.btn{
+  zoom:80%;
+}
