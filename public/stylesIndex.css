@@ -24,6 +24,10 @@
   margin: 1% 40% 0 40%;
 }
 
+.lastRow{
+  border-bottom: 1.5px solid rgb(225, 225, 232);
+}
+
 @media (max-width: 1000px){
   body{
     -moz-transform: scale(2);
