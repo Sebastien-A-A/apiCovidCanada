@@ -28,7 +28,7 @@
     </tr>
     </thead>
     <tbody>
-      <% for (var i = 365; i > 0; i--){ %>
+      <% for (var i = 364; i > 0; i--){ %>
         <tr>
         <th scope="row"><%= getDate(366-i) %></th>
         <td><%= data.active[i].cumulative_cases.toLocaleString() %></td>
