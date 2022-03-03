@@ -95,7 +95,7 @@ app.get("/", function(req, res) {
 
 
 app.post("/alberta", function(req, res){
-  const dateMinus = getDate(366);
+  const dateMinus = getDate(367);
   var citySelected = "Alberta";
   var newUrl = "https://api.opencovid.ca/timeseries?loc=AB&stat=active&after=" + dateMinus;
 
@@ -103,7 +103,7 @@ app.post("/alberta", function(req, res){
 });
 
 app.post("/britishcolombia", function(req, res){
-  const dateMinus = getDate(366);
+  const dateMinus = getDate(367);
   var citySelected = "British Colombia";
   var newUrl = "https://api.opencovid.ca/timeseries?loc=BC&stat=active&after=" + dateMinus;
 
@@ -111,7 +111,7 @@ app.post("/britishcolombia", function(req, res){
 });
 
 app.post("/manitoba", function(req, res){
-  const dateMinus = getDate(366);
+  const dateMinus = getDate(367);
   var citySelected = "Manitoba";
   var newUrl = "https://api.opencovid.ca/timeseries?loc=MB&stat=active&after=" + dateMinus;
 
@@ -119,7 +119,7 @@ app.post("/manitoba", function(req, res){
 });
 
 app.post("/newbrunswick", function(req, res){
-  const dateMinus = getDate(366);
+  const dateMinus = getDate(367);
   var citySelected = "New Brunswick";
   var newUrl = "https://api.opencovid.ca/timeseries?loc=NB&stat=active&after=" + dateMinus;
 
@@ -127,7 +127,7 @@ app.post("/newbrunswick", function(req, res){
 });
 
 app.post("/newfoundlandandlabrador", function(req, res){
-  const dateMinus = getDate(366);
+  const dateMinus = getDate(367);
   var citySelected = "New Foundland And Labrador";
   var newUrl = "https://api.opencovid.ca/timeseries?loc=NL&stat=active&after=" + dateMinus;
 
@@ -135,7 +135,7 @@ app.post("/newfoundlandandlabrador", function(req, res){
 });
 
 app.post("/northwestterritories", function(req, res){
-  const dateMinus = getDate(366);
+  const dateMinus = getDate(367);
   var citySelected = "Northwest Territories";
   var newUrl = "https://api.opencovid.ca/timeseries?loc=NT&stat=active&after=" + dateMinus;
 
@@ -143,7 +143,7 @@ app.post("/northwestterritories", function(req, res){
 });
 
 app.post("/novascotia", function(req, res){
-  const dateMinus = getDate(366);
+  const dateMinus = getDate(367);
   var citySelected = "Nova Scotia";
   var newUrl = "https://api.opencovid.ca/timeseries?loc=NS&stat=active&after=" + dateMinus;
 
@@ -151,7 +151,7 @@ app.post("/novascotia", function(req, res){
 });
 
 app.post("/nunavut", function(req, res){
-  const dateMinus = getDate(366);
+  const dateMinus = getDate(367);
   var citySelected = "Nunavut";
   var newUrl = "https://api.opencovid.ca/timeseries?loc=NU&stat=active&after=" + dateMinus;
 
@@ -159,7 +159,7 @@ app.post("/nunavut", function(req, res){
 });
 
 app.post("/ontario", function(req, res){
-  const dateMinus = getDate(366);
+  const dateMinus = getDate(367);
   var citySelected = "Ontario";
   var newUrl = "https://api.opencovid.ca/timeseries?loc=ON&stat=active&after=" + dateMinus;
 
@@ -167,7 +167,7 @@ app.post("/ontario", function(req, res){
 });
 
 app.post("/princeedwardisland", function(req, res){
-  const dateMinus = getDate(366);
+  const dateMinus = getDate(367);
   var citySelected = "Prince Edward Island";
   var newUrl = "https://api.opencovid.ca/timeseries?loc=PE&stat=active&after=" + dateMinus;
 
@@ -175,7 +175,7 @@ app.post("/princeedwardisland", function(req, res){
 });
 
 app.post("/quebec", function(req, res){
-  const dateMinus = getDate(366);
+  const dateMinus = getDate(367);
   var citySelected = "Quebec";
   var newUrl = "https://api.opencovid.ca/timeseries?loc=QC&stat=active&after=" + dateMinus;
 
@@ -183,7 +183,7 @@ app.post("/quebec", function(req, res){
 });
 
 app.post("/saskatchewan", function(req, res){
-  const dateMinus = getDate(366);
+  const dateMinus = getDate(367);
   var citySelected = "Saskatchewan";
   var newUrl = "https://api.opencovid.ca/timeseries?loc=SK&stat=active&after=" + dateMinus;
 
@@ -191,7 +191,7 @@ app.post("/saskatchewan", function(req, res){
 });
 
 app.post("/yukon", function(req, res){
-  const dateMinus = getDate(366);
+  const dateMinus = getDate(367);
   var citySelected = "Yukon";
   var newUrl = "https://api.opencovid.ca/timeseries?loc=YT&stat=active&after=" + dateMinus;
 
@@ -199,7 +199,7 @@ app.post("/yukon", function(req, res){
 });
 
 app.post("/canada", function(req, res){
-  const dateMinus = getDate(366);
+  const dateMinus = getDate(367);
   var citySelected = "Canada";
   var newUrl = "https://api.opencovid.ca/timeseries?loc=canada&stat=active&after=" + dateMinus;
 
