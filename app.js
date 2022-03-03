@@ -48,7 +48,7 @@ function getDate(minus){
 app.get("/", function(req, res) {
 
   var data = '';
-  const dateMinus = getDate(1);
+  const dateMinus = getDate(2);
   var url = 'https://api.opencovid.ca/timeseries?stat=cases&loc=prov&date=' + dateMinus;
 
   https.get(url, (resp) => {
@@ -61,7 +61,7 @@ app.get("/", function(req, res) {
       res.render("index", {
         albertaNew: data.cases[0].cases,
         albertaTotal: data.cases[0].cumulative_cases,
-        britishNew: data.cases[1].cumulative_cases,
+        britishNew: data.cases[1].cases,
         britishTotal: data.cases[1].cumulative_cases,
         manitobaNew: data.cases[2].cases,
         manitobaTotal: data.cases[2].cumulative_cases,
